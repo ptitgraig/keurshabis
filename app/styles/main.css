@@ -6,18 +6,21 @@
 
 .social a {
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 128px;
+  height: 128px;
   margin: 0;
   padding: 0;
+  transition: all .2s ease-out;
 }
 .fb {
-  background:url(../images/facebook-5-64.png) no-repeat;
+  background:url(../images/logo-fb.png) 0 0 no-repeat;
 }
 .twitter {
-  background:url(../images/twitter-5-64.png) no-repeat;
+  background:url(../images/logo-twitter.png) 0 0 no-repeat;
 }
-
+.social a:hover, .social a:focus {
+  background-position:0 -128px;
+}
 .small-n-center {
   width:50%;
 }
