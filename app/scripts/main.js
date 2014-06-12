@@ -135,11 +135,11 @@ jQuery(document).ready(function ($) {
         
     });
 
-    $('#produits').on('click', '.square', function(e) {
-        $("#produits").find('.square').removeClass('active');
+    /*$('#produits').on('click', '.square', function(e) {
+        $("#produits").find('.square').removeClass('active');*/
         
         
-        $('body').addClass('square-open');
+        //$('body').addClass('square-open');
         /*$(this).css({
             'width' : $('#produits').outerWidth(true)/2,
             'height' : $('#produits').outerWidth(true)/2,
@@ -148,9 +148,9 @@ jQuery(document).ready(function ($) {
             'marginTop' : $('#produits').outerHeight(true)/4,
             'marginLeft' : $('#produits').outerWidth(true)/4
         });*/
-        $(this).addClass('active');
+        //$(this).addClass('active');
 
-    });
+    //});
 /*
     $('#typebijou-menu').on( 'click', 'a', function(e) {
         e.preventDefault();
