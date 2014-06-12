@@ -164,7 +164,10 @@ if(isset($_POST["title"])) {
         }
 
         $fp = fopen('../../data/bijoux.json', 'a');
-        $line = json_encode($_POST)."\n"."";
+        $data = $_POST;
+        //echo $data;
+        $data['imgname'] = $NewImageName;
+        $line = json_encode($data)."\n"."";
         fwrite($fp, $line);
         fclose($fp);
         /*$lines = file('./results.json');
@@ -200,7 +203,7 @@ if(isset($_POST["title"])) {
         //header('Location: http://'.$_SERVER["HTTP_HOST"].'/keurshabis/app/admin/index.php?success=true');
         exit;
 
-    }else{
+    } else {
         echo '{"type": "error", "message" : "Hmm. Il m\'est impossible de redimensionner l\'image."}'; 
         exit;
     }

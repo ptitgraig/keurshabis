@@ -50,20 +50,51 @@
         <div class="form-group">
             <label for="title" class="col-sm-2 control-label">Intitulé</label>
             <div class="col-sm-5">
-                <input type="text" class="form-control input-lg" id="title" name="title" placeholder="Ex: Bague Cartier 3 diamants">
+                <input type="text" class="form-control input-lg" id="title" name="title" placeholder="Ex: Trinité">
                 <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="materiau" class="col-sm-2 control-label">Matériau</label>
+            <div class="col-sm-5">
+                <select name="materiau" class="form-control input-lg">
+                    <option value="platine">Platine</option>
+                    <option value="orjaune">Or jaune</option>
+                    <option value="orblanc">Or blanc</option>
+                    <option value="orrose">Or rose</option>
+                    <option value="argent">Argent</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="diamant" class="col-sm-2 control-label">Diamants</label>
+            <div class="col-sm-5">
+                <select name="diamant" class="form-control input-lg">
+                    <option value="0">Aucun</option>
+                    <option value="1">Un seul</option>
+                    <option value="2">Au moins deux</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="public" class="col-sm-2 control-label">Public</label>
+            <div class="col-sm-5">
+                <select name="public" class="form-control input-lg">
+                    <option value="femme">Femme</option>
+                    <option value="homme">Homme</option>
+                    <option value="mixte">Mixte</option>
+                </select>
             </div>
         </div>
         <div class="form-group">
             <label for="price" class="col-sm-2 control-label">Prix</label>
             <div class="col-sm-5">
-               <div class="input-group">
+                <div class="input-group">
                     <input id="price" type="text" name="price" class="form-control input-lg" placeholder="Ex: 999.99">
                     <span class="input-group-addon">&euro;</span>
                 </div>
                 <span class="text-danger"></span>
             </div>
-            
         </div>
         <div class="form-group">
             <label for="price" class="col-sm-2 control-label">Description</label>
@@ -85,13 +116,12 @@
                 </span>
             </div>
         </div>
-        
-        <table role="presentation" class="table col-sm-offset-2 col-sm-5 table-striped"><tbody class="files"></tbody></table>
-        <hr/>
         <br/>
         <div class="form-group submit">
             <div class="col-sm-offset-2 col-sm-8">
-              <button type="submit" class="btn btn-success btn-lg btn-block">Ajouter le bijou à la boutique</button>
+                <button type="submit" class="btn btn-success btn-lg btn-block">
+                    Ajouter le bijou à la boutique
+                </button>
             </div>
         </div>
     </form>
