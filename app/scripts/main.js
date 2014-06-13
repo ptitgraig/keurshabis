@@ -139,16 +139,6 @@ jQuery(document).ready(function ($) {
         return false;
     })
 
-    function removeFilter (filter, array) {
-        var y = array
-        var removeItem = filter;
-
-        y = $.grep(y, function(value) {
-          return value != removeItem;
-        });
-        return y;
-    }
-
     $('.filter-content').find('a').on('click', function(e){
         e.preventDefault();
         $this = $(this);
@@ -168,6 +158,7 @@ jQuery(document).ready(function ($) {
                 filterValue += filters[ prop ];
             }
         }
+        
         // set filter for Isotope
         $("#produits").isotope({
             itemSelector: '.square',

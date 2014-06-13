@@ -69,7 +69,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                 <div id="category-landing" class="grid-block">
                     <h1>Rechercher un bijou</h1>
                 </div>
-                <div class="block block-layered-nav toggle filtering toggle-active">
+                <div class="block block-layered-nav toggle filtering">
                     <div class="block-title">
                         <h2>
                             <a class="toggle-button" href="#filter-menu">
@@ -152,7 +152,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                                         <div class="filter-content" data-filter-group="materiau">
                                             <ol>
                                                 <li class="filter-width-200inches">
-                                                    <a href="#" data-filter=".platiner">
+                                                    <a href="#" data-filter=".platine">
                                                         <span class="count">1</span>
                                                         Platine
                                                     </a>
@@ -284,130 +284,6 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                 </div>
             </div>
         </div>
-        <div class="selection">
-<!--
-            <ul class="nav nav-pills">
-                <li class="active">
-                    <a href="#" class="button" data-filter="*">Tout</a>
-                </li>
-                <li class="dropdown">
-                    <a id="typebijou" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <span>Type de bijou</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul id="typebijou-menu" class="dropdown-menu" role="menu" aria-labbeledby="typebijou" data-filter-group="typebijou">
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Tous les types</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".alliance" class="button">Alliances</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".fiancaille" class="button">Bagues de fiancailles</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".bague" class="button">Bagues</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".boucle" class="button">Boucles d'oreilles</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".pendentif" class="button">Pendentifs</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".collier" class="button">Colliers</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a id="materiau" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <span>Matériau</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="materiau" data-filter-group="materiau">
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Tout type de matériau</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".platine" class="button">Platine</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".orjaune" class="button">Or jaune</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".orblanc" class="button">Or blanc</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".orrose" class="button">Or rose</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".argent" class="button">Argent</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a id="materiau" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <span>Diamants</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul id="diamant-menu" class="dropdown-menu" role="menu" aria-labbeledby="diamant" data-filter-group="diamant">
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Avec ou sans diamant</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".zero-diamant" class="button">Aucun diamant</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".un-diamant" class="button">Un seul diamant</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".plus-un-diamant" class="button">Au moins 2 diamants</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a id="sexe" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <span>Public</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul id="public-menu" class="dropdown-menu" role="menu" aria-labbeledby="public" data-filter-group="public">
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".mixte" class="button">Mixte</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".femme" class="button">Une femme</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".homme" class="button">Un homme</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a id="prix" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <span>Prix</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul id="prix-menu" class="dropdown-menu" role="menu" aria-labbeledby="prix" data-filter-group="prix">
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">sans budget</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".inf500" class="button">entre 501 et 1000 &euro;</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".sup500" class="button">entre 1001 et 2000 &euro;</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".sup500" class="button">entre 2001 et 3000 &euro;</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#" data-filter=".sup500" class="button">&gt; 3000 &euro;</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        -->
-        </div>
 
         <div id="produits">
             <?
@@ -464,7 +340,27 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
     </section>
 
     <section id="temoignage">
-      <h1>Témoignages</h1>
+      <div class="container clearfix">
+
+                    <div id="content" class="grid_12">
+                        <h1>Keursha vous aime ...</h1>
+                        <h2>... et est aimé, des clients témoignent de leur satisfaction.</h2>
+                    </div>
+
+                    <div class="grid_4 portrait">
+                        <img src="images/portraits/portrait1.jpg" class="circle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec semper urna, sed molestie sem. Ut lacinia neque dignissim congue ultrices. Nulla mattis semper enim at tristique. Etiam id convallis lorem. In hac habitasse platea dictumst. Suspendisse et sollicitudin nisi, sed gravida nisl. Suspendisse potenti. Nunc ac vehicula sem, semper.</p>
+                    </div>
+                    <div class="grid_4 portrait">
+                        <img src="images/portraits/portrait2.jpg" class="circle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec semper urna, sed molestie sem. Ut lacinia neque dignissim congue ultrices. Nulla mattis semper enim at tristique. Etiam id convallis lorem. In hac habitasse platea dictumst. Suspendisse et sollicitudin nisi, sed gravida nisl. Suspendisse potenti. Nunc ac vehicula sem, semper.</p>
+                    </div>
+                    <div class="grid_4 omega portrait">
+                        <img src="images/portraits/portrait3.jpg" class="circle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec semper urna, sed molestie sem. Ut lacinia neque dignissim congue ultrices. Nulla mattis semper enim at tristique. Etiam id convallis lorem. In hac habitasse platea dictumst. Suspendisse et sollicitudin nisi, sed gravida nisl. Suspendisse potenti. Nunc ac vehicula sem, semper.</p>
+                    </div>
+
+                </div>
     </section>
 
     <section id="a-propos">

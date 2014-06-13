@@ -107,10 +107,10 @@ body {
 }
 
 section {
-  border-bottom: 1px solid #999;
+  /*border-bottom: 1px solid #999;*/
   text-align: center;
   padding: 100px 0 0;
-  height: 800px;
+  min-height: 800px;
   width: 100%;
 }
 

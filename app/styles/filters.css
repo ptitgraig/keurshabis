@@ -5,6 +5,7 @@
     border-bottom: 5px solid rgba(0,0,0,0.05);
     background: #a2afc0;
     font-family: Arial;
+    margin-bottom: 10px;
 }
 .layer-back:after {
     content: '';
@@ -120,6 +121,7 @@
     border-bottom: 1px solid #e0e0e0;
 }
 .filter .liner {
+    font-size: 13px;
     overflow: hidden;
     padding: 10px;
     border-radius: 3px;
@@ -269,10 +271,11 @@
 }
 @media screen and (min-width: 1024px) {
     .filter-list>li {
-        width: 25%;
+        width: 15.5%;
     }
     .filter-list>li:nth-child(3n+1) {
-        clear: left;
+        /*clear: left;*/
+        clear:none;
     }
     .filter-list>li:nth-child(4n+1) {
         clear: none;
@@ -280,6 +283,6 @@
 }
 @media screen and (min-width: 1120px) {
     .layer-back .container {
-        max-width: 1120px;
+        max-width: 100%;
     }
 }
