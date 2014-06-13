@@ -132,7 +132,52 @@ jQuery(document).ready(function ($) {
             $("#produits").find('.square').removeClass('active');    
         }
         $(this).removeClass('square-open');
+    });
+
+    $('.toggle-button').on('click', function() {
+        $('.block-layered-nav.toggle.filtering').toggleClass('toggle-active');
+        return false;
+    })
+
+    function removeFilter (filter, array) {
+        var y = array
+        var removeItem = filter;
+
+        y = $.grep(y, function(value) {
+          return value != removeItem;
+        });
+        return y;
+    }
+
+    $('.filter-content').find('a').on('click', function(e){
+        e.preventDefault();
+        $this = $(this);
         
+        var filterGroup = $this.parents('.filter-content').attr('data-filter-group');
+        // set filter for group
+        filters[ filterGroup ] = $this.attr('data-filter');
+        // combine filters
+        var filterValue = '';
+
+        if ($this.hasClass('selected')) {
+            $this.removeClass('selected');
+            filters[ filterGroup ] = '';
+        } else {
+            $this.addClass('selected');
+            for ( var prop in filters ) {
+                filterValue += filters[ prop ];
+            }
+        }
+        // set filter for Isotope
+        $("#produits").isotope({
+            itemSelector: '.square',
+            layoutMode:'masonry',
+            masonry: {
+                columnWidth:10    
+            },
+            transitionDuration:"0.6s",
+            filter: filterValue
+        });
     });
 
     /*$('#produits').on('click', '.square', function(e) {

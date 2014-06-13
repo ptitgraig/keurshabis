@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/modal-components.css">
+    <link rel="stylesheet" href="styles/filters.css">
     <!-- endbuild -->
 
     
@@ -63,19 +64,228 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
 
     <section id="bijoux">
       <h1>Bijoux</h1>
-        <div class="filter-wrapper">
-            <div class="filter-container">
-                <div class="category-landing">
-                    <h2>Votre Sélection</h2>
+        <div class="layer-back">
+            <div class="container">
+                <div id="category-landing" class="grid-block">
+                    <h1>Rechercher un bijou</h1>
                 </div>
-                <div class="block-layered-nav">
+                <div class="block block-layered-nav toggle filtering toggle-active">
                     <div class="block-title">
-                        <a class="toggle-button" href="#filter-menu">Filtre<span class="badge"></span></a>
+                        <h2>
+                            <a class="toggle-button" href="#filter-menu">
+                                Filtres <span class="badge">1</span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="filter-menu" class="block-content filter toggle-target">
+                        <div class="liner">
+                            <ol id="narrow-by-list" class="filter-list">
+                                <li class="currently">
+                                    <div class="wrapper">
+                                        <div class="filter-title">
+                                            <h3>Vos filtres en cours</h3>
+                                        </div>
+                                        <div class="filter-content">
+                                            <ol class="current-filters-list">
+                                                <li>
+                                                    <a href="http://skinnyties.com/color/yellow">
+                                                        <span class="label">Fabric:</span> <span class="value">Silk</span>
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                            <a class="show-all-filters button button-small" href="http://skinnyties.com/color/yellow">Supprimer tous les Filtres</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="filter-color">
+                                    <div class="wrapper">
+                                        <div class="filter-title">
+                                            <h3>Type de bijou</h3>
+                                        </div>
+                                        <div class="filter-content" data-filter-group="typebijou">
+                                            <ol>
+                                                <li class="filter-color-brown">
+                                                    <a href="#" data-filter=".alliance">
+                                                        <span class="count">1</span>
+                                                        Alliances
+                                                    </a>
+                                                </li>
+                                                <li class="filter-color-red">
+                                                    <a href="#" data-filter=".fiancaille">
+                                                        <span class="count">2</span>
+                                                        Bagues de fiancailles
+                                                    </a>
+                                                </li>
+                                                <li class="filter-color-yellow">
+                                                    <a href="#" data-filter=".bague">
+                                                        <span class="count">2</span>
+                                                        Bagues
+                                                    </a>
+                                                </li>
+                                                <li class="filter-color-yellow">
+                                                    <a href="#" data-filter=".boucle">
+                                                        <span class="count">2</span>
+                                                        Boucles d'oreilles
+                                                    </a>
+                                                </li>
+                                                <li class="filter-color-yellow">
+                                                    <a href="#" data-filter=".pendentif">
+                                                        <span class="count">2</span>
+                                                        Pendentifs
+                                                    </a>
+                                                </li>
+                                                <li class="filter-color-yellow">
+                                                    <a href="#" data-filter=".collier">
+                                                        <span class="count">2</span>
+                                                        Collier
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="filter-width">
+                                    <div class="wrapper">
+                                        <div class="filter-title">
+                                            <h3>Matériau</h3>
+                                        </div>
+                                        <div class="filter-content" data-filter-group="materiau">
+                                            <ol>
+                                                <li class="filter-width-200inches">
+                                                    <a href="#" data-filter=".platiner">
+                                                        <span class="count">1</span>
+                                                        Platine
+                                                    </a>
+                                                </li>
+                                                <li class="filter-width-250inches">
+                                                    <a href="#" data-filter=".orjaune">
+                                                        <span class="count">1</span>
+                                                        Or jaune
+                                                    </a>
+                                                </li>
+                                                <li class="filter-width-250inches">
+                                                    <a href="#" data-filter=".orblanc">
+                                                        <span class="count">1</span>
+                                                        Or blanc
+                                                    </a>
+                                                </li>
+                                                <li class="filter-width-250inches">
+                                                    <a href="#" data-filter=".orrose">
+                                                        <span class="count">1</span>
+                                                        Or rose
+                                                    </a>
+                                                </li>
+                                                <li class="filter-width-250inches">
+                                                    <a href="#" data-filter=".argent">
+                                                        <span class="count">1</span>
+                                                        Argent
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="filter-length">
+                                    <div class="wrapper">
+                                        <div class="filter-title">
+                                            <h3>Diamants</h3>
+                                        </div>
+                                        <div class="filter-content" data-filter-group="diamant">
+                                            <ol>
+                                                <li class="filter-length-55inches">
+                                                    <a href="#" data-filter=".zero-diamant">
+                                                        <span class="count">1</span>
+                                                        Aucun diamant
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".un-diamant">
+                                                        <span class="count">1</span>
+                                                        Un seul diamant
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".deux-diamants">
+                                                        <span class="count">1</span>
+                                                        Au moins 2 diamants
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="filter-length">
+                                    <div class="wrapper">
+                                        <div class="filter-title">
+                                            <h3>Public</h3>
+                                        </div>
+                                        <div class="filter-content" data-filter-group="public">
+                                            <ol>
+                                                <li class="filter-length-55inches">
+                                                    <a href="#" data-filter=".mixte">
+                                                        <span class="count">1</span>
+                                                        Mixte
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".femme">
+                                                        <span class="count">1</span>
+                                                        Femme
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".homme">
+                                                        <span class="count">1</span>
+                                                        Homme
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="filter-length">
+                                    <div class="wrapper">
+                                        <div class="filter-title" data-filter-group="prix">
+                                            <h3>Prix</h3>
+                                        </div>
+                                        <div class="filter-content">
+                                            <ol>
+                                                <li class="filter-length-55inches">
+                                                    <a href="#" data-filter=".inf1000">
+                                                        <span class="count">1</span>
+                                                        entre 501 et 1000 &euro;
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".sup1000">
+                                                        <span class="count">1</span>
+                                                        entre 1001 et 2000 &euro;
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".sup2000">
+                                                        <span class="count">1</span>
+                                                        entre 2001 et 3000 &euro;
+                                                    </a>
+                                                </li>
+                                                <li class="filter-length-56inches">
+                                                    <a href="#" data-filter=".sup3000">
+                                                        <span class="count">1</span>
+                                                        supérieur à 3000 &euro;
+                                                    </a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
-            </div><!-- /container -->
+            </div>
         </div>
         <div class="selection">
+<!--
             <ul class="nav nav-pills">
                 <li class="active">
                     <a href="#" class="button" data-filter="*">Tout</a>
@@ -196,6 +406,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                     </ul>
                 </li>
             </ul>
+        -->
         </div>
 
         <div id="produits">
