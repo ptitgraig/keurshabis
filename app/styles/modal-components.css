@@ -73,6 +73,7 @@ perspective effects (not including the modals and the overlay).
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
+	border:2px solid #ffcc33;
 }
 
 .md-content h3 {
@@ -112,6 +113,19 @@ perspective effects (not including the modals and the overlay).
 	margin: 0 auto;
 	font-size: 1.5em;
 	padding:12px 24px;
+	background-color: #468847;
+	border:0;
+	color:#fff;
+}
+
+
+.md-content button:hover {
+	background-color: #356635;
+	color:#fff;
+}
+
+.md-content button:active {
+	background-color: green;
 }
 
 /* Individual modal styles with animations/transitions */

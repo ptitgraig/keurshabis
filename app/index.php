@@ -298,7 +298,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
             for ($i = 0; $i < $max; $i++) {
                 echo '
                     <div class="square '.$data[$i]['type'].' '.$data[$i]['materiau'].' '.$data[$i]['public'].' md-trigger" data-modal="modal-'.$i.'">
-                        <img src="images/bijoux/'.$data[$i]['imgname'].'" width="200" height="200" />
+                        <img src="images/bijoux/'.$data[$i]['imgname'].'" width="100" height="100" />
                         <span class="title">'.$data[$i]['title'].'</span>
                     </div>';
             }
@@ -313,7 +313,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                     <div class="md-content">
                         <h3>'.$data[$i]['title'].'</h3>
                         <div>
-                            <img src="images/bijoux/'.$data[$i]['imgname'].'" />
+                            <img src="images/bijoux/'.$data[$i]['imgname'].'" width="250" height="250" />
                             <div class="fiche">
                                 <dl>
                                     <dt>Matériau</dt>

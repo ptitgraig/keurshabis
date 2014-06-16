@@ -186,8 +186,8 @@ img.circle {
 }
 
 .square {
-  width: 200px;
-  height: 235px;
+  width: 100px;
+  height: 135px;
   margin: 5px;
   background-color: #eee;
   border: 1px solid #eee;
@@ -301,8 +301,7 @@ img.circle {
 }
 .fiche dl dt {
   color:#ccc;
-  
-  width: 100px;
+  width: 20%;
   display: block;
   float: left;
   line-height: 30px;
@@ -313,7 +312,7 @@ img.circle {
 
 .fiche dl dd {
   color:#333;
-  width: 400px;
+  width: 60%;
   line-height: 30px;
   padding-left: 20px;
   display: block;
