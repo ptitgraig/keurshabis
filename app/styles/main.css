@@ -1,6 +1,14 @@
 /* Global */
 
+.section-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 
+.keursha {
+  font-family: 'royal_chickenitalic' !important;
+  font-size: 4em !important;
+}
 
 /* sunglow gold :#FFCC33;*/
 
@@ -11,6 +19,7 @@
   margin: 0;
   padding: 0;
   transition: all .2s ease-out;
+  border-radius: 64px;
 }
 .fb {
   background:url(../images/logo-fb.png) 0 0 no-repeat;
@@ -116,6 +125,10 @@ h1 {
   font-weight:bold;
   text-transform: uppercase;
   color:#FFCC33;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 img {
@@ -250,7 +263,7 @@ img.circle {
 }
 
 .square .title {
-  font:500 14px Arial;
+  font-size:14px;
 }
 
 .square.fiancaille {
@@ -298,9 +311,12 @@ img.circle {
 
 .fiche dl {
   color:#333;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 .fiche dl dt {
-  color:#ccc;
+  color:#b8b8b8;
   width: 20%;
   display: block;
   float: left;
@@ -308,6 +324,7 @@ img.circle {
   height: 30px;
   text-align: right;
   padding-right: 10px;
+  clear: left;
 }
 
 .fiche dl dd {

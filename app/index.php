@@ -62,7 +62,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
       </div>
     </section>
 
-    <section id="bijoux">
+    <section id="bijoux" class="section-wrapper">
       <h1>Bijoux</h1>
         <div class="layer-back">
             <div class="container">
@@ -100,7 +100,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                                 <li class="filter-color">
                                     <div class="wrapper">
                                         <div class="filter-title">
-                                            <h3>Type de bijou</h3>
+                                            <h3>Type</h3>
                                         </div>
                                         <div class="filter-content" data-filter-group="typebijou">
                                             <ol>
@@ -253,25 +253,25 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                                                 <li class="filter-length-55inches">
                                                     <a href="#" data-filter=".inf1000">
                                                         <span class="count">1</span>
-                                                        entre 501 et 1000 &euro;
+                                                        &lt; 1000 &euro;
                                                     </a>
                                                 </li>
                                                 <li class="filter-length-56inches">
                                                     <a href="#" data-filter=".sup1000">
                                                         <span class="count">1</span>
-                                                        entre 1001 et 2000 &euro;
+                                                        &lt; 2000 &euro;
                                                     </a>
                                                 </li>
                                                 <li class="filter-length-56inches">
                                                     <a href="#" data-filter=".sup2000">
                                                         <span class="count">1</span>
-                                                        entre 2001 et 3000 &euro;
+                                                        &lt; 3000 &euro;
                                                     </a>
                                                 </li>
                                                 <li class="filter-length-56inches">
                                                     <a href="#" data-filter=".sup3000">
                                                         <span class="count">1</span>
-                                                        supérieur à 3000 &euro;
+                                                        &gt; 3000 &euro;
                                                     </a>
                                                 </li>
                                             </ol>
@@ -332,7 +332,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
         // popin
         for ($i = 0; $i < $max; $i++) {
             echo '
-                <div class="md-modal md-effect-1" id="modal-'.$i.'">
+                <div class="md-modal md-effect-8" id="modal-'.$i.'">
                     <div class="md-content">
                         <h3>'.$data[$i]['title'].'</h3>
                         <div>
@@ -350,7 +350,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                                     <dt>Prix</dt>
                                     <dd>'.$data[$i]['price'].' &euro;</dd>
                                 </dl>
-                                <button class="btn btn-modal md-close">Contact</button>
+                                <button class="btn btn-modal md-close">Contacter <span class="keursha">Keursha</span></button>
                             </div>
                         </div>
                     </div>
