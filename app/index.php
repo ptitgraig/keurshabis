@@ -67,7 +67,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
         <div class="layer-back">
             <div class="container">
                 <div id="category-landing" class="grid-block">
-                    <h1>Rechercher un bijou</h1>
+                    <h3>Rechercher un bijou</h3>
                 </div>
                 <div class="block block-layered-nav toggle filtering">
                     <div class="block-title">
@@ -287,6 +287,29 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
 
         <div id="produits">
             <?
+
+            function readableMateriau($materiau) {
+                $read = $materiau;
+                switch ($materiau) {
+                    case "platine":
+                        $read = "Platine";
+                        break;
+                    case "orjaune":
+                        $read = "Or Jaune";
+                        break;
+                    case "orblanc":
+                        $read = "Or Blanc";
+                        break;
+                    case "orrose":
+                        $read = "Or Rose";
+                        break;
+                    case "argent":
+                        $read = "Argent";
+                        break;
+                }
+                return $read;
+            }
+
             // presentation des produits
             $lines = file('data/bijoux.json');
             
@@ -317,15 +340,15 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                             <div class="fiche">
                                 <dl>
                                     <dt>Matériau</dt>
-                                    <dd>'.$data[$i]['materiau'].'</dd>
+                                    <dd>'.readableMateriau($data[$i]['materiau']).'</dd>
                                     <dt>Diamants</dt>
                                     <dd>'.$data[$i]['diamant'].'</dd>
                                     <dt>Public</dt>
-                                    <dd>'.$data[$i]['public'].'</dd>
+                                    <dd>'.ucfirst($data[$i]['public']).'</dd>
                                     <dt>Description</dt>
-                                    <dd>'.$data[$i]['description'].'</dd>
+                                    <dd class="description">'.$data[$i]['description'].'</dd>
                                     <dt>Prix</dt>
-                                    <dd>'.$data[$i]['price'].'</dd>
+                                    <dd>'.$data[$i]['price'].' &euro;</dd>
                                 </dl>
                                 <button class="btn btn-modal md-close">Contact</button>
                             </div>
