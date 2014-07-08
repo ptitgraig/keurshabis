@@ -162,14 +162,14 @@ jQuery(document).ready(function ($) {
         // set filter for Isotope
         $("#produits").isotope({
             itemSelector: '.square',
-            layoutMode:'masonry',
-            masonry: {
-                columnWidth:10    
-            },
-            transitionDuration:"0.6s",
             filter: filterValue
         });
     });
+
+    $('.close').on('click', function(e){
+        var idpopin = $(this).data('close-id');
+        $('#'+idpopin).removeClass('md-show');
+    })
 
     /*$('#produits').on('click', '.square', function(e) {
         $("#produits").find('.square').removeClass('active');*/

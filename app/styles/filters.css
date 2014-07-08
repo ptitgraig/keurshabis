@@ -3,7 +3,7 @@
     padding: 21px 0 19px;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-bottom: 5px solid rgba(0,0,0,0.05);
-    background: #ffcc33;
+    background: #3f3f3f;
     margin-bottom: 10px;
 }
 .layer-back:after {
@@ -23,7 +23,7 @@
 .layer-back .container {
     margin: 0 auto;
     padding: 0 15px;
-    background-color: #ffcc33;
+    background-color: #3f3f3f;
 }
 .layer-back a {
     text-decoration: none;
@@ -55,7 +55,7 @@
 .block-layered-nav.filtering .toggle-button {
     position: absolute;
     right: 15px;
-    top: 22px;
+    top: 17px;
     display: inline-block;
     padding: 0 37px 0 8px;
     border: 1px solid rgba(0,0,0,0.15);
@@ -211,10 +211,13 @@
 }
 .grid-block h3 {
     text-align: right;
-    font-size: 2.6em;
+    font-size: 1.1em;
     padding-right: 30px;
+    text-align: left;
+    color:#ffcc33;
 }
 
+/* ecrans > 480px  */
 @media screen and (min-width: 480px) {
     .filter-list {
         overflow: hidden;
@@ -232,6 +235,7 @@
         width: 100%;
     }
 }
+/* ecrans > 600px  */
 @media screen and (min-width: 600px) {
     .layer-back .container {
         position: relative;
@@ -251,7 +255,7 @@
     }
     .block-layered-nav.filtering .toggle-button {
         right: 30px;
-        top: 15px;
+        top: 10px;
         margin: 0;
     }
     .filter {
@@ -296,6 +300,10 @@
     }
     .section-wrapper {
         width: 100%;
+    }
+    .grid-block h3 {
+        font-size: 35px;
+        text-align: right;
     }
 }
 @media screen and (min-width: 1120px) {

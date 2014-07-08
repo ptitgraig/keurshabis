@@ -323,6 +323,7 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
                     <div class="square '.$data[$i]['type'].' '.$data[$i]['materiau'].' '.$data[$i]['public'].' md-trigger" data-modal="modal-'.$i.'">
                         <img src="images/bijoux/'.$data[$i]['imgname'].'" width="100" height="100" />
                         <span class="title">'.$data[$i]['title'].'</span>
+                        <span class="type">'.ucfirst($data[$i]['type']).'</span>
                     </div>';
             }
             ?>
@@ -332,9 +333,9 @@ Keursha n'est pas un site de vente de bijoux , c'est un concept à part pour vou
         // popin
         for ($i = 0; $i < $max; $i++) {
             echo '
-                <div class="md-modal md-effect-8" id="modal-'.$i.'">
+                <div class="md-modal md-effect-2" id="modal-'.$i.'">
                     <div class="md-content">
-                        <h3>'.$data[$i]['title'].'</h3>
+                        <h3>'.$data[$i]['title'].'<span class="close" data-close-id="modal-'.$i.'">x</span></h3>
                         <div>
                             <img src="images/bijoux/'.$data[$i]['imgname'].'" width="250" height="250" />
                             <div class="fiche">
@@ -444,7 +445,7 @@ Nous vous souhaitons une agréable visite en notre compagnie et restons à votre
     <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>-->
     <!--<script type="text/javascript" src='scripts/swipe.js'></script>-->
     <script type="text/javascript" src="scripts/isotope.js"></script>
-    <script type="text/javascript" src='scripts/mansonry-horizontal.js'></script>
+    <!--<script type="text/javascript" src='scripts/mansonry-horizontal.js'></script>-->
     <script type="text/javascript" src="scripts/dropdown.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script src="scripts/fastclick.js"></script>
